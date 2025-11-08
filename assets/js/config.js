@@ -1,5 +1,5 @@
 const API_CONFIG = {
-    BASE_URL: 'https://railway.com/invite/bJ2sDaBcOKr',
+    BASE_URL: 'https://b7e85afb-7dbb-4352-9501-1426349fef5d.up.railway.app',
     ENDPOINTS: {
         HEALTH_CHECK: '/api/health',
         AI_DOCTOR: '/api/ai-doctor',
