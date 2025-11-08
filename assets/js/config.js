@@ -1,5 +1,5 @@
 const API_CONFIG = {
-    BASE_URL: 'http://localhost:5000',
+    BASE_URL: 'https://railway.com/invite/bJ2sDaBcOKr',
     ENDPOINTS: {
         HEALTH_CHECK: '/api/health',
         AI_DOCTOR: '/api/ai-doctor',
