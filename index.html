@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAI Pro - AI-Powered Healthcare</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h1>🏥 MedAI Pro</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('ai-doctor')">AI Doctor</a></li>
+                <li><a href="#" onclick="showSection('specialists')">Specialists</a></li>
+                <li><a href="#" onclick="showSection('health')">Health Tips</a></li>
+                <li><button class="logout-btn" onclick="logout()">Logout</button></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <section id="home" class="section active">
+                <div class="hero">
+                    <h2>Welcome to MedAI Pro</h2>
+                    <p>Your AI-Powered Personal Healthcare Assistant</p>
+                    <button class="btn btn-primary" onclick="showSection('ai-doctor')">Start Consultation</button>
+                </div>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>🤖 AI Doctor</h3>
+                        <p>Get instant health advice from our AI assistant</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>👨‍⚕️ Specialists</h3>
+                        <p>Connect with professional medical specialists</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>💡 Health Tips</h3>
+                        <p>Daily wellness and health recommendations</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ai-doctor" class="section">
+                <div class="ai-doctor-container">
+                    <h2>🤖 General AI Doctor</h2>
+                    <p class="subtitle">Powered by Google Gemini API</p>
+
+                    <div class="tips-panel">
+                        <h4>💡 Tips</h4>
+                        <ul>
+                            <li>✓ Describe symptoms clearly</li>
+                            <li>✓ Ask health questions</li>
+                            <li>✓ Get medicine suggestions</li>
+                            <li>✓ Learn about conditions</li>
+                        </ul>
+                        <div class="warning">
+                            <strong>Note:</strong> For emergencies, call 911 immediately.
+                        </div>
+                    </div>
+
+                    <div class="chat-box">
+                        <div id="chat-messages" class="messages"></div>
+
+                        <div class="input-group">
+                            <input 
+                                type="text" 
+                                id="user-input" 
+                                placeholder="Describe your symptoms..."
+                                onkeypress="handleKeyPress(event)"
+                            >
+                            <button class="btn btn-send" onclick="sendMessage()">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="specialists" class="section">
+                <h2>👨‍⚕️ Find Specialists</h2>
+                <div id="specialists-list" class="specialists-grid">
+                    <p>Loading specialists...</p>
+                </div>
+            </section>
+
+            <section id="health" class="section">
+                <h2>💡 Daily Health Tips</h2>
+                <div id="tips-list" class="tips-grid">
+                    <p>Loading health tips...</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
