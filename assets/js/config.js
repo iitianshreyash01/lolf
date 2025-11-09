@@ -1,5 +1,5 @@
 const API_CONFIG = {
-    BASE_URL: 'http://127.0.0.1:5000/',
+    BASE_URL: 'https://backend-1-cvbp.onrender.com',
     ENDPOINTS: {
         HEALTH_CHECK: '/api/health',
         AI_DOCTOR: '/api/ai-doctor',
